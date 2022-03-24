@@ -48,5 +48,5 @@ for item in price_list_preparation2:
 highest_price = max(price_list_preparation3)
 index = price_list_preparation3.index("£57.25")
 
-print(f"Most expensive book in this page is \"{book_names[15]}\" and {price_list_preparation2[15]}.")
+print(f"Most expensive book in this page is \"{book_names[15]}\" and {price_list_preparation3[15]}.")
     
