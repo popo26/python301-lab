@@ -5,28 +5,30 @@
 # only if neither of them applies.
 
 
-##Ai not getting it
+file_name = "integers.txt"
 
-file_name = "integer.txt"
+def add():
+    try:
+        with open(file_name, "r") as file:
+            num = file.readline()
+            first_num = num.strip()
+            print(first_num)
+            for n in file:
+                sum = 0
+                sum = int(first_num) + int(n)
+                print(sum)
 
-try:
-    with open(file_name, "r") as file:
-        num = file.readline()
-        first_num = num.strip()
-        print(first_num)
-        for n in file:
-            sum = 0
-            sum = int(first_num) + int(n)
-            print(sum)
-        
-except IOError:    
-    print("right file path?")
-       
-except ValueError:
-    print("right data type?")
+    except IOError:
+        print("check if file path is correct")
+    except ValueError:
+        print("check if the correct value is entered")
 
-except:#Catching no error message
-    print("Not calculating correctly.")
+
+
+add()
+            
+
+
 
 
 
