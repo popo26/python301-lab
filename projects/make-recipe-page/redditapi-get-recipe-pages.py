@@ -3,7 +3,6 @@
 # If you commit this code to GitHub, make sure to keep your API secrets
 # out of version control, for example by adding them as environment variables.
 
-from email.mime import base
 import praw
 import requests
 from dotenv import load_dotenv
@@ -43,6 +42,7 @@ reddit = praw.Reddit(
     access_token= os.getenv('access_token'), #Get the token by enabling line 25 to 35 once expired.
 )
 
+#Ref: https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html
 subreddit = reddit.subreddit("Curry")
 
 submission_titles = []
