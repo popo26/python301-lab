@@ -3,3 +3,4 @@ secrets.py
 venv
 *.json
 *.txt
+*.ini
