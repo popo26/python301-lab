@@ -54,6 +54,11 @@ for submission in reddit.subreddit("Curry").hot(limit=25):
     submission_upvote_ratios.append(submission.upvote_ratio)
 
 #Reorder 3 lists based on upvote descending order.
+'''
+Ref links:
+https://stackoverflow.com/questions/9764298/how-to-sort-two-lists-which-reference-each-other-in-the-exact-same-way
+https://stackoverflow.com/questions/39629253/what-does-the-code-zip-sorted-zipunits-errors-do#:~:text=When%20you%20sort%20the%20zipped,zip%20recombines%20the%20the%20output.
+'''
 submission_upvote_ratios, submission_titles, submission_urls = zip(*sorted(zip(submission_upvote_ratios, submission_titles, submission_urls ), reverse=True))
 
 html_file = ""
