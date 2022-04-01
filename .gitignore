@@ -4,3 +4,4 @@ venv
 *.json
 *.txt
 *.ini
+__pycache__

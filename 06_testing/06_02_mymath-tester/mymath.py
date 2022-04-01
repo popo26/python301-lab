@@ -5,10 +5,12 @@
 class CustomZeroDivsionError(Exception):
     pass
 
-
 def subtract_divide(dividend, x, y):
     try:
         z = x - y
         return dividend / z
     except ZeroDivisionError:
         raise CustomZeroDivsionError(f"This won't work because {x} - {y} = 0.")
+
+
+# print(subtract_divide(12,0,0))
