@@ -49,3 +49,8 @@ if __name__ == "__main__":
         author = get_author(soup)
         recipe = get_recipe(soup)
         print(f"({author})\t[{recipe}]\n\n\n")
+
+# print(get_page_content(BASE_URL))
+# print(get_html_content(BASE_URL))
+
+
