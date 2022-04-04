@@ -7,3 +7,22 @@
 # ******************************
 # Hello
 # ******************************
+
+def decorate(symbol):
+    def decorator_func(initial_func):
+        def wrapper(msg):
+            # symbol = "*"
+            print(symbol * 20)
+            print(msg)
+            print(symbol * 20)
+            
+            # return initial_func(msg)
+        return wrapper
+    return decorator_func
+
+@decorate("*")
+def message(msg):
+    print(msg)
+
+message("Awesome")
+
