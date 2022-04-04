@@ -3,3 +3,8 @@
 # Then try to refactor your solution, maybe you can make the code more
 # concise or more elegant? Keep checking whether you broke the functionality
 # by repeatedly running your test suite against your changes.
+
+
+'''A file to be tested --> refactor_rescrape.py
+   A test file -->test_refactor_rescrape.py
+'''
